@@ -1,0 +1,36 @@
+
+  body {
+    margin: 0; /* Removes default white border around the page */
+    display: flex;
+    min-height: 100vh; /* Ensures the colors stretch the full height of the screen */
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+
+.column1 {
+  background-color: #e6ede9;
+  padding-left:12%;
+  margin-right:3%;
+  float: left;
+  width: 20%;
+}
+
+.column2 {
+  margin-top:3%;
+  margin-right:20%;
+  float: left;
+  width: 40%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  .spaced-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust spacing as needed */
+  }
